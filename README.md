@@ -3,6 +3,11 @@
 
 A React component/Scrivito widget which shows how to work with external REST-APIs.
 
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/mdwp/scrivito-news-api/master/news-api-screenshot.png)
+
+
 ## Installation
 
 Open your terminal.
