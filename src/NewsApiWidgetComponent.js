@@ -31,13 +31,13 @@ class NewsApiComponent extends React.Component {
   }
 
   render() {
-    /*if (!this.state.article.length) {
+    if (!this.state.article.length && Scrivito.isInPlaceEditingActive()) {
       return (
-        <InPlaceEditingPlaceholder center={true}>
-          Add news categories in the widget properties.
-        </InPlaceEditingPlaceholder>
+          <h4 className="text-center">
+            Provide the news category in the widget properties.
+          </h4>
       );
-    }*/
+    }
 
     return (
 
