@@ -1,4 +1,4 @@
-import "./NewsApiWidgetClass";
-import "./NewsApiWidgetComponent";
-import "./NewsApiWidgetEditingConfig";
+import "./EventbriteWidgetClass";
+import "./EventbriteWidgetComponent";
+import "./EventbriteWidgetEditingConfig";
 
