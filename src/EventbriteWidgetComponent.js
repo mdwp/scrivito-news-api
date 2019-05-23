@@ -29,7 +29,7 @@ class EventbriteComponent extends React.Component {
     super(props);
 
     this.widget = this.props.widget;
-    console.log(this.widget.obj());
+
 
     this.state = {
       event: '',
@@ -61,6 +61,7 @@ class EventbriteComponent extends React.Component {
 
     axios.get(url)
       .then(res => {
+
 
         const response = res.data;
 
@@ -96,6 +97,12 @@ class EventbriteComponent extends React.Component {
 
 
   render() {
+      const currentPage = Scrivito.currentPage();
+      if (!currentPage) return;
+
+      const currentPageUrl = Scrivito.urlFor(currentPage);
+      const events = currentPageUrl.includes('events');
+
     /*if (this.state.event === '' && Scrivito.isInPlaceEditingActive()) {
       return (
           <h4 className="text-center">
@@ -109,13 +116,13 @@ class EventbriteComponent extends React.Component {
       <div className="col col-8">
       <EventTitle name={this.state.name} />
       <EventSummary summary={this.state.summary} />
-      {Scrivito.currentPage().id() === 'c9597b6341dee33d' ?
+      {events ?
       <p><a href={`/${this.widget.obj().id()}`}><b>Details zur Veranstaltung</b></a></p>
       :
       <p><Scrivito.LinkTag to={"/events/aktuelle-veranstaltungen.html"}><b>Zurück zur Veranstaltungsliste</b></Scrivito.LinkTag></p>
       }
       <EventLogo  logo={this.state.logo} />
-      {Scrivito.currentPage().id() !== 'c9597b6341dee33d' && <div className="article" dangerouslySetInnerHTML={{__html: this.state.event}} />}
+      {!events && <div className="article" dangerouslySetInnerHTML={{__html: this.state.event}} />}
 
       </div>
       <div className="col col-4">
