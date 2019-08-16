@@ -1,8 +1,7 @@
 {
   "name": "scrivito-news-api",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "A React component/Scrivito widget which shows how to work with external REST-APIs.",
-
   "main": "index.js",
   "peerDependencies": {
     "react": "^16.6.0",
@@ -11,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdwp/scrivito-eventbrite.git"
+    "url": "git+https://github.com/mdwp/scrivito-news-api.git"
   },
   "keywords": [
     "scrivito",
@@ -26,8 +25,7 @@
   },
   "homepage": "https://github.com/mdwp/scrivito-news-api#readme",
   "dependencies": {
-    "axios": "^0.18.0",
-    "dateformat": "3.0.3"
+    "axios": "^0.18.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",

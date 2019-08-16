@@ -27,7 +27,7 @@ module.exports = (env, argv) => {
     entry: { index: "./index" },
     output: {
       path: BUILD_PATH,
-      library: "scrivito-eventsbrite",
+      library: "scrivito-news-api",
       libraryTarget: "umd",
     },
     externals: [

@@ -3,32 +3,27 @@
 
 A React component/Scrivito widget which shows how to work with external REST-APIs.
 
-## Screenshot
-
-![Screenshot](https://raw.githubusercontent.com/mdwp/scrivito-news-api/master/news-api-screenshot.png)
-
 ## Installation
 
 Open your terminal.
 
 `$ cd` to your Scrivito project
 
-```shell
+```
 $ npm install scrivito-news-api
 ```
 
-Import the widget in your javascript `src/Widgets/index.js`.
+Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`).
 
 Add this line to your index.js:
 
-```js
+```
 import "scrivito-news-api";
 ```
 
 ## Widget Configuratiom
 First you need an API-Key from https://newsapi.org/register.
-You can save the Key in the widget properties. Also choose a category for the news the widget should render.
-
+You can save the Key in the widget configuration form. Also choose a category for the news the widget should render.
 
 ## Development
 
@@ -59,8 +54,4 @@ npm i && npm run build && cd build/ && npm publish
 With `npm run eslint` and `npm run es-check` you can check your coding quality.
 
 
-## Widget properties
 
-In the widget properties you can set:
-- API key
-- News category

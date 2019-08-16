@@ -31,18 +31,18 @@ class NewsApiComponent extends React.Component {
   }
 
   render() {
-    if (!this.state.article.length && Scrivito.isInPlaceEditingActive()) {
+    /*if (!this.state.article.length) {
       return (
-          <h4 className="text-center">
-            Provide the news category in the widget properties.
-          </h4>
+        <InPlaceEditingPlaceholder center={true}>
+          Add news categories in the widget properties.
+        </InPlaceEditingPlaceholder>
       );
-    }
+    }*/
 
     return (
 
       <div className="article">
-        <h4><a href="https://newsapi.org">Powered by NewsAPI.org</a></h4>
+
         {this.state.article.map((articles, index) =>
           articles.url.startsWith('https') ?
             <div className="media" key={index}>
