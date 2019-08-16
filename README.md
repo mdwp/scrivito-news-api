@@ -23,7 +23,7 @@ import "scrivito-news-api";
 
 ## Widget Configuratiom
 First you need an API-Key from https://newsapi.org/register.
-You can save the Key in the widget configuration form. Also choose a category for the News the widget should render.
+You can save the Key in the widget configuration form. Also choose a category for the news the widget should render.
 
 ## Development
 
