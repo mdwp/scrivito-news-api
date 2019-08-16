@@ -42,7 +42,7 @@ class NewsApiComponent extends React.Component {
     return (
 
       <div className="article">
-
+        <h4><a href="https://newsapi.org">Powered by NewsAPI.org</a></h4>
         {this.state.article.map((articles, index) =>
           articles.url.startsWith('https') ?
             <div className="media" key={index}>

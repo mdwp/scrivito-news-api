@@ -1,6 +1,6 @@
 {
   "name": "scrivito-news-api",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A React component/Scrivito widget which shows how to work with external REST-APIs.",
   "main": "index.js",
   "peerDependencies": {

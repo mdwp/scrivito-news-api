@@ -17,7 +17,7 @@ Open your terminal.
 $ npm install scrivito-news-api
 ```
 
-Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`).
+Import the widget in your javascript `src/Widgets/index.js`.
 
 Add this line to your index.js:
 
