@@ -1,6 +1,5 @@
 import * as React from 'react';
 import * as Scrivito from 'scrivito';
-import axios from 'axios';
 
 class NewsApiComponent extends React.Component {
 
@@ -17,13 +16,16 @@ class NewsApiComponent extends React.Component {
     const category = this.widget.get('category') || 'general';
     const entries = this.widget.get('entries') || '5';
     const key = this.widget.get('apiKey')
-    axios.get(`https://newsapi.org/v2/top-headlines?category=${category}&pageSize=${entries}&country=de&apiKey=${key}`)
-      .then(res => {
-        const response = res.data;
-        const tmp = Object.values(response);
-        const article = tmp[2];
-        this.setState({ article });
-      })
+
+    fetch(`https://newsapi.org/v2/top-headlines?category=${category}&pageSize=${entries}&country=de&apiKey=${key}`) // first step
+      .then(response => response.json()) // second step
+      .then(data => {
+
+        this.setState({ article: data.articles });
+
+  })
+  .catch(error => console.error(error))
+
   }
 
   componentWillUnmount() {
