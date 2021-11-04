@@ -24,9 +24,7 @@
     "url": "https://github.com/mdwp/scrivito-news-api/issues"
   },
   "homepage": "https://github.com/mdwp/scrivito-news-api#readme",
-  "dependencies": {
-    "axios": "^0.18.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
