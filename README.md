@@ -3,6 +3,8 @@
 
 A React component/Scrivito widget which shows how to work with external REST-APIs.
 
+**Note:** The free plan from newsapi.org only allows requests from **localhost**
+
 ## Installation
 
 Open your terminal.
